@@ -1,0 +1,10 @@
+Preguntas
+
+1- Me parece que preguntarle al objeto mediante un mensaje y que nos responda, y nosotros desde afuera no sepamos como es que responde a esa pregunta esta bien, por un lado mantienen el encapsulamiento de ese objeto, por otro lado queda mas legible asi.
+
+2- Aparenta codigo repetido. Es como que todos son de un "tipo" de especie, y le estamos preguntando a cada uno lo mismo, si sabe hacer tal o cual cosa. Seria bueno hacer como un genrico "combatiente", y hacer los tests sobre esa "tipo" generico.
+
+3- El resultado de un combate tiene 3 resultados posibles, "false", bando1 o bando2.
+Con false quise expresar que nadie gano.
+Bando1 y bando2 son objetos con un array dentro con los combatientes, y sabe responder si en el grupo aun hay combatientes que pueden seguir en cambate.
+Al ponerlos en objetos puedo hacer una Assert y saber quien gano, independientemente de los integrantes de los bandos.
